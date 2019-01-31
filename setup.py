@@ -23,9 +23,12 @@ setup(
     },
     install_requires = [
         'numpy',
-        #'pynumpress',
+        'pynumpress',
         "functools32",
     ],
+    dependency_links=[
+        'git+https://github.com/MKoesters/pynumpress.git#egg=pynumpress',
+    ]
     description      = 'high-throughput mzML parsing',
     long_description = 'pymzML - python module for mzML parsing',
     author           = 'M. Koesters, J. Leufken, S. Schulze, K. Sugimoto, R. Zahedi, M. Hippler and C. Fufezan',
