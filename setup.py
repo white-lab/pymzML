@@ -24,7 +24,7 @@ setup(
     install_requires = [
         'numpy',
         'pynumpress',
-        "functools32",
+        "functools32 ; python_version<=\"2.7\"",
     ],
     dependency_links=[
         'git+https://github.com/MKoesters/pynumpress.git#egg=pynumpress',
