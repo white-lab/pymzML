@@ -15,13 +15,13 @@ Copyright (C) 2010-2016 M. Kösters, C. Fufezan
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-__all__ = ['run', 'spec', 'obo', 'minimum', 'plot', 'file_classes']
+__all__ = ['run', 'spec', 'obo', 'minimum', 'file_classes']
 
 import os
 import sys
 
-if not hasattr(sys, 'version_info') or sys.version_info < (3, 4):
-    raise RuntimeError('pymzML requires Python 3.4 or later.')
+# if not hasattr(sys, 'version_info') or sys.version_info < (3, 4):
+#     raise RuntimeError('pymzML requires Python 3.4 or later.')
 
 # Set version
 version_path = os.path.join(
@@ -37,7 +37,6 @@ import pymzml.spec
 import pymzml.obo
 # import pymzml.minimum
 import pymzml.utils
-import pymzml.plot
 
 # Global PyNump decoder
 try:
