@@ -478,7 +478,7 @@ class Spectrum(MS_Spectrum):
         self._measured_precision            = measured_precision
         self.noise_level_estimate          = {}
 
-        if self.element:
+        if self.element is not None:
             self.ns = re.match(
                 '\{.*\}', element.tag
             ).group(0) if re.match('\{.*\}', element.tag) else ''
