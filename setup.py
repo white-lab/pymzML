@@ -24,6 +24,7 @@ setup(
     install_requires = [
         'numpy',
         #'pynumpress',
+        "functools32",
     ],
     description      = 'high-throughput mzML parsing',
     long_description = 'pymzML - python module for mzML parsing',

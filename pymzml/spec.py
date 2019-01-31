@@ -42,7 +42,11 @@ from operator import itemgetter as itemgetter
 from struct import unpack
 import math
 # import pymzml.obo
-from functools import lru_cache
+try:
+    from functools import lru_cache
+except ImportError:
+    from functools32 import lru_cache
+
 import pymzml.regex_patterns as regex_patterns
 import re
 import sys
