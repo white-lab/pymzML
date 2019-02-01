@@ -289,11 +289,11 @@ class MS_Spectrum(object):
             if float_type == '32-bit float':
                 # one character code may be sufficient too (f)
                 f_type = np.float32
-                out_data = np.fromstring(out_data, f_type)
+                out_data = np.frombuffer(out_data, f_type)
             elif float_type == '64-bit float':
                 # one character code may be sufficient too (d)
                 f_type = np.float64
-                out_data = np.fromstring(out_data, f_type)
+                out_data = np.frombuffer(out_data, f_type)
         else:
             out_data = np.array([])
         return out_data
